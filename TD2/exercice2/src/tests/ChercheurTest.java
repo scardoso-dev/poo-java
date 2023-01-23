@@ -1,5 +1,7 @@
-package classes;
+package tests;
 
+import classes.Chercheur;
+import classes.Laboratoire;
 import org.junit.jupiter.api.Test;
 
 import java.text.SimpleDateFormat;
