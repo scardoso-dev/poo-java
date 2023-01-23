@@ -1,7 +1,7 @@
 package classes;
 
 /**
- * Classe Informaticien qui hérite de la classe Personne
+ * Classe Informaticien qui hérite de la classe Salarie
  * @author Samuel CARDOSO
  */
 public class Informaticien extends Salarie {
