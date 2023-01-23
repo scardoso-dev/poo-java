@@ -28,14 +28,15 @@ Enseignante en charge des cours : <strong>Mme Kenza KELLOU-MENOUER</strong>
 *Chaque TD correspond à un projet. Il est possible qu'un import des dépendances de Java, JUnit soient nécessaire à l'aide de l'IDE lors de la première ouverture d'un projet.<br>*
 - L'arborescence est la suivante :
 ```
-|--- NUMERO_DE_L'EXERCICE (project)
-     |--- src
-          |--- main.java
-          |--- classes (package)
-               |--- MaClasse1.java
-                    ...
-          |--- tests (package)
-               |--- MaClasse1Test.java 
-                    ...
+|--- NUMERO_DU_TD (project)
+     |--- NUMERO_DE_L'EXERCICE (module)
+          |--- src
+               |--- main.java
+               |--- classes (package)
+                    |--- MaClasse1.java
+                         ...
+               |--- tests (package)
+                    |--- MaClasse1Test.java 
+                         ...
 ```
 ###
