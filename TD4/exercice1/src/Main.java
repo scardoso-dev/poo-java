@@ -1,5 +1,6 @@
 import classes.MedecinTraitant;
 import classes.Patient;
+import classes.Personne;
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -27,17 +28,17 @@ public class Main {
         /* ----------------------------------------------------------------------------------------------- */
         /* B. Stocker ces trois instances dans une collection hétérogène.                                  */
         /* ----------------------------------------------------------------------------------------------- */
-        ArrayList objets = new ArrayList();
-        objets.add(mt1);
-        objets.add(patient1);
-        objets.add(patient2);
+        Personne[] personnes = new Personne[3];
+        personnes[0] = mt1;
+        personnes[1] = patient1;
+        personnes[2] = patient2;
 
         /* ----------------------------------------------------------------------------------------------- */
         /* C. Afficher les informations de chaque instance de cette collection avec la méthode toString(). */
         /* ----------------------------------------------------------------------------------------------- */
         System.out.println("Affichage collection hétérogène");
-        for (Object o: objets) {
-            System.out.println("\t"+o);
+        for (Personne p: personnes) {
+            System.out.println("\t"+p);
         }
 
         /* ----------------------------------------------------------------------------------------------- */

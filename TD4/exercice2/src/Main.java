@@ -1,4 +1,5 @@
 import classes.Ministre;
+import classes.Personne;
 import classes.President;
 
 import java.util.ArrayList;
@@ -20,17 +21,17 @@ public class Main {
         /* ----------------------------------------------------------------------------------------------- */
         /* B. Stocker ces trois instances dans une collection hétérogène ;                                 */
         /* ----------------------------------------------------------------------------------------------- */
-        ArrayList objets = new ArrayList();
-        objets.add(president);
-        objets.add(m1);
-        objets.add(m2);
+        Personne[] personnes = new Personne[3];
+        personnes[0] = president;
+        personnes[1] = m1;
+        personnes[2] = m2;
 
         /* ----------------------------------------------------------------------------------------------- */
         /* C. Afficher les informations de chaque instance de cette collection avec la méthode toString() ;*/
         /* ----------------------------------------------------------------------------------------------- */
         System.out.println("Affichage de la collection");
-        for (Object o: objets) {
-            System.out.println("\t"+o);
+        for (Personne p: personnes) {
+            System.out.println("\t"+p);
         }
 
         /* ----------------------------------------------------------------------------------------------- */
