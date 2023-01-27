@@ -1,10 +1,11 @@
-import classes.Client;
-import classes.Informaticien;
-import classes.Personne;
-import classes.Salarie;
+import classes.*;
 
 import java.util.ArrayList;
 
+/**
+ * Classe principale Application
+ * @author Samuel CARDOSO
+ */
 public class Application {
     public static void main(String[] args) {
         ArrayList<Personne> personnes = new ArrayList();

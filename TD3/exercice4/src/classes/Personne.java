@@ -68,7 +68,10 @@ public class Personne {
         this.prenom = prenom;
     }
 
-
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "Je suis " + this.prenom;

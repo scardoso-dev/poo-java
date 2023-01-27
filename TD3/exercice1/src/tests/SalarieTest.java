@@ -5,9 +5,12 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Classe de Test de la classe Salarie
+ */
 class SalarieTest {
 
-    // Initialisation des salaries par défaut
+    // Initialisation des salariés par défaut
     Salarie defaultSalarie = new Salarie("DESCHAMPS", "Paul", 1898.63);
     Salarie[] salaries = new Salarie[] {
             new Salarie("rEYChmEN", "DaVId", 2300),

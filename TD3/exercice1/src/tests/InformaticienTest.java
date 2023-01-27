@@ -5,6 +5,9 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Classe de Test de la classe Informaticien
+ */
 class InformaticienTest {
 
     // Initialisation des informaticiens par défaut

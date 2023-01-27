@@ -5,6 +5,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+/**
+ * Classe de Test de la classe Client
+ * @author Samuel CARDOSO
+ */
 class ClientTest {
 
     // Initialisation des clients par défaut

@@ -67,7 +67,10 @@ public class Informaticien extends Personne {
         System.out.println(res);
     }
 
-
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return super.toString() + " Sa specialite est : " + this.specialite;

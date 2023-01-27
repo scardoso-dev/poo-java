@@ -41,6 +41,10 @@ public class Cercle extends Forme {
         return PI * this.rayon * this.rayon;
     }
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "Cercle ( rayon " + this.rayon + " cm )";

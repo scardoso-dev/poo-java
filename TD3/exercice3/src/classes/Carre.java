@@ -44,6 +44,11 @@ public class Carre extends Forme {
         return this.cote * this.cote;
     }
 
+
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "Carre ( coté " + this.cote + " cm )";

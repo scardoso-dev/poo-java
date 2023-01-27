@@ -50,8 +50,11 @@ public abstract class Personne {
 
     /**
      * Constructeur de la classe Personne avec paramètres
-     * @param nom
-     * @param prenom
+     * @param nom (String) Nom de la Personne
+     * @param prenom (String) Prénom de la Personne
+     * @param email (String) Email de la Personne
+     * @param telephone (String) Téléphone de la Personne
+     * @param salaire (Double) Salaire de la personne
      */
     public Personne(String nom, String prenom, String email, String telephone, double salaire) {
         this.id = ++ lastCurrentId;
@@ -171,6 +174,10 @@ public abstract class Personne {
      */
     public abstract void afficheInfoSalaire();
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "Personne{ " +

@@ -45,6 +45,10 @@ public class Client extends Personne {
         this.adresse = adresse;
     }
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return super.toString() + " Son adresse est : " + this.adresse;

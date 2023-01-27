@@ -1,6 +1,4 @@
-import classes.Carre;
-import classes.Cercle;
-import classes.Forme;
+import classes.*;
 
 import java.text.DecimalFormat;
 

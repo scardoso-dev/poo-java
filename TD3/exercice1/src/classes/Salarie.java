@@ -5,6 +5,10 @@ package classes;
  * @author Samuel CARDOSO
  */
 public class Salarie extends Personne {
+
+    /**
+     * Salaire du salarié
+     */
     protected double salaire;
 
     /**
@@ -41,6 +45,10 @@ public class Salarie extends Personne {
         this.salaire = salaire;
     }
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return super.toString() + " Son salaire est de : " + this.salaire;

@@ -13,6 +13,10 @@ public abstract class Metier extends Personne {
     public Metier(String prenom) {
         super(prenom);
     }
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
 
     @Override
     public String toString() {
