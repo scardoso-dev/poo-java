@@ -1,8 +1,4 @@
-import classes.Ministre;
-import classes.Personne;
-import classes.President;
-
-import java.util.ArrayList;
+import classes.*;
 
 /**
  * Classe Main de l'exercice 2

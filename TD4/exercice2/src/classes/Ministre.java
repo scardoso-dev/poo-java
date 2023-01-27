@@ -64,6 +64,10 @@ public class Ministre extends Personne {
         this.president.ministres.add(this); // Ajout du ministre dans le tableau des ministres de la classe President
     }
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "Ministre "+ this.nom + " " + this.prenom + ", son domaine est " + this.domaine;

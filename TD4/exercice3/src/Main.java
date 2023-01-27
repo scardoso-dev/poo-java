@@ -61,6 +61,10 @@ public class Main {
         return Integer.parseInt(str);
     }
 
+    /**
+     * Fonction qui contient le code nécessaire pour valider la question 1 du TD
+     * @return (int) Renvoie la saisie sous forme d'entier si tout est ok, -1 sinon
+     */
     public static int question1() {
         System.out.println("Question 1");
         int saisie = -1;
@@ -88,6 +92,10 @@ public class Main {
         return saisie;
     }
 
+    /**
+     * Fonction qui contient le code nécessaire pour valider la question 2 du TD
+     * @return (int) Renvoie la saisie sous forme d'entier si tout est ok, -1 sinon
+     */
     public static int question2() {
         System.out.println("Question 2");
         int saisie = -1;
@@ -115,6 +123,10 @@ public class Main {
         return saisie;
     }
 
+    /**
+     * Fonction qui contient le code nécessaire pour valider la question 3 du TD
+     * @return (int) Renvoie la saisie sous forme d'entier si tout est ok, -1 sinon
+     */
     public static int question3() {
         System.out.println("Question 3");
         int saisie = -1;

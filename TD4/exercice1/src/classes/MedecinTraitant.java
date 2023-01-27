@@ -59,6 +59,10 @@ public class MedecinTraitant extends Personne {
         this.specialite = specialite;
     }
 
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return super.toString() + ", médecin traitant avec pour spécialité : " + this.specialite;

@@ -56,7 +56,10 @@ public class President extends Personne {
         this.pays = pays;
     }
 
-
+    /**
+     * Polymorphisme : Redéfinition de la classe toString()
+     * @return (String) Retourne l'instance courante (this) sous forme de chaîne de caractères
+     */
     @Override
     public String toString() {
         return "President de "+ this.pays + " est " + super.toString();
