@@ -40,13 +40,18 @@ public abstract class Personne {
      * @throws Exception
      */
     public Personne(String nss, String nom, String prenom, String civilite) throws Exception {
-        String nssFirstInt = String.valueOf(nss.charAt(0));
+        nss = nss.replaceAll("\\s", "");
+        System.out.println(nss);
+        String nssFirstInt = "";
         if (!Objects.equals(civilite, "H") && !Objects.equals(civilite, "F")) {
             throw new IllegalArgumentException("Civilite doit être H ou F");
         }
-        if (nss.equals("0") || nss.equals("")) {
+        if (nss.equals("0") || nss.isEmpty()) {
             throw new NSSErrorException("Le NSS (Numéro de Sécurité Social) ne peut pas être 0 ou vide ! Veuillez renseigner les 15 chiffres");
-        } else if (nss.length() != 15) {
+        } else {
+             nssFirstInt = String.valueOf(nss.charAt(0));
+        }
+        if (nss.length() != 15) {
             throw new NSSErrorException("Le NSS (Numéro de Sécurité Social) doit être composé de 15 chiffres\n \t NSS n'a pas 15 chiffres");
         }
         if ( (civilite.equals("H")) && (!nssFirstInt.equals("1")) ) {
@@ -105,16 +110,23 @@ public abstract class Personne {
      *
      */
     public void setNss(String nss) throws NSSErrorException {
-        String nssFirstInt = String.valueOf(nss.charAt(0));
-        if (nss.equals("0") || nss.equals("")) {
+        nss = nss.replaceAll("\\s", "");
+        String nssFirstInt = "";
+        if (!Objects.equals(civilite, "H") && !Objects.equals(civilite, "F")) {
+            throw new IllegalArgumentException("Civilite doit être H ou F");
+        }
+        if (nss.equals("0") || nss.isEmpty()) {
             throw new NSSErrorException("Le NSS (Numéro de Sécurité Social) ne peut pas être 0 ou vide ! Veuillez renseigner les 15 chiffres");
-        } else if (nss.length() != 15) {
+        } else {
+            nssFirstInt = String.valueOf(nss.charAt(0));
+        }
+        if (nss.length() != 15) {
             throw new NSSErrorException("Le NSS (Numéro de Sécurité Social) doit être composé de 15 chiffres\n \t NSS n'a pas 15 chiffres");
         }
-        if ( (this.civilite.equals("H")) && (!nssFirstInt.equals("1")) ) {
+        if ( (civilite.equals("H")) && (!nssFirstInt.equals("1")) ) {
             throw new NSSErrorException("Le premier chiffre du NSS (Numéro de Sécurité Social) doit être égale à 1 car il s'agit d'un homme");
 
-        } else if ( (this.civilite.equals("F")) && (!nssFirstInt.equals("2")) ) {
+        } else if ( (civilite.equals("F")) && (!nssFirstInt.equals("2")) ) {
             throw new NSSErrorException("Le premier chiffre du NSS (Numéro de Sécurité Social) doit être égale à 2 car il s'agit d'une femme");
         }
         this.nss = nss;

@@ -19,6 +19,12 @@ class MedecinTraitantTest {
     @Test
     public void testMedecinTraitant() throws Exception {
 
+        // Lorsque le NSS est à égal vide avec des espaces
+        NSSErrorException exceptionNSS0 = assertThrows(NSSErrorException.class, () -> {
+            new MedecinTraitant("    ", "DUPONT", "Patrick", "H", "généraliste");
+        });
+        assertEquals("Le NSS (Numéro de Sécurité Social) ne peut pas être 0 ou vide ! Veuillez renseigner les 15 chiffres", exceptionNSS0.getMessage());
+
         // Lorsque le NSS est à égal a 0
         NSSErrorException exceptionNSS1 = assertThrows(NSSErrorException.class, () -> {
             new MedecinTraitant("0", "DUPONT", "Patrick", "H", "généraliste");
