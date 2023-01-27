@@ -4,7 +4,7 @@ package classes;
  * Classe Menuisier qui hérite de la classe ABSTRAITE Metier
  * @author Samuel CARDOSO
  */
-public class Menuisier extends Metier {
+public class Menuisier extends Personne {
 
     /**
      * Constructeur de la classe Menuisier

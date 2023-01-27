@@ -1,6 +1,4 @@
-import classes.Menuisier;
-import classes.Personne;
-import classes.Plombier;
+import classes.*;
 
 /**
  * Classe de test des métiers

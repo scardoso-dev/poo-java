@@ -4,7 +4,7 @@ package classes;
  * Classe Plombier qui hérite de la classe ABSTRAITE Metier
  * @author Samuel CARDOSO
  */
-public class Plombier extends Metier {
+public class Plombier extends Personne {
 
     /**
      * Constructeur de la classe Plombier
